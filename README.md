@@ -1,7 +1,5 @@
-# My Website
+# My Portfolio.
+I create this repository with zero experience in Web Development to create my own website.
 
-I create this repository with zero experience in `Web Development`.
-
-Goals:
-- Share my progress
-- Share what I learn in the process
+## Lenguages used:
+![Lenguages used](https://skillicons.dev/icons?i=html,css,js)
