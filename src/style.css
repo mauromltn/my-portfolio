@@ -50,14 +50,14 @@ nav ul li {
 }
 
 nav a {
-    font-size: 17px;
+    font-size: 1.06em;
     font-weight: 600;
     color: #bbbbbb;
+    transition: .3s ease-in-out;
 }
 
 nav a:hover, nav a:focus {
     color: #f2f2f2;
-    transition: .3s;
 }
 
 /* MAIN INFO */
@@ -72,11 +72,33 @@ nav a:hover, nav a:focus {
 }
 
 .main-info span {
-    font-size: 70px;
+    font-size: 5em;
     margin-bottom: 15px;
 }
+
 .main-info p {
     font-size: 18px;
+}
+
+@media (max-width: 60em) {
+    .main-info span {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 50.4em) {
+    .main-info span {
+        font-size: 3.5em;
+    }
+    .main-info p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 45.4em) {
+    .main-info span {
+        font-size: 2.5em;
+    }
 }
 
 /* PROJECTS */
@@ -98,7 +120,7 @@ nav a:hover, nav a:focus {
     border: 1px solid rgba(132, 132, 132, 0.5);
     border-radius: 25px;
     background-color: rgba(61, 61, 61, 0.5);    
-    transition: all .3s;
+    transition: all .3s ease-in-out;
 }
 
 .projects-div:hover {
