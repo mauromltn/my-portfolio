@@ -29,18 +29,15 @@ header {
     align-items: center;
     margin: 20px 0;
     height: 50px;
-    width: 450px;
+    width: 500px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
     border: 1px solid #a9a9a933;
     border-radius: 50px;
     background-color: #72727233;
     backdrop-filter: blur(10px);
 }
-
-/* header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-} */
 
 nav ul {
     display: flex;
@@ -61,6 +58,25 @@ nav a {
 nav a:hover, nav a:focus {
     color: #f2f2f2;
     transition: .3s;
+}
+
+/* MAIN INFO */
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    text-align: center;
+    margin: 180px 0;
+}
+
+.main-info span {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+.main-info p {
+    font-size: 18px;
 }
 
 /* PROJECTS */
@@ -96,6 +112,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     padding: 30px 0;
     color: #f2f2f2;
     font-family: monospace;
