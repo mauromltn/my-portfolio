@@ -43,10 +43,7 @@ nav ul {
     display: flex;
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    margin: 0 25px;
+    gap: 40px;
 }
 
 nav a {
@@ -73,11 +70,12 @@ nav a:hover, nav a:focus {
 
 .main-info span {
     font-size: 5em;
-    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .main-info p {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.8;
 }
 
 @media (max-width: 60em) {
@@ -99,6 +97,26 @@ nav a:hover, nav a:focus {
     .main-info span {
         font-size: 2.5em;
     }
+}
+
+/*SKILLS */
+.skills {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills p {
+    margin: 0;
+    padding: 10px 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    background-color: rgba(61, 61, 61, 0.5);
+}
+
+.skills-heading, .projects-heading {
+    margin-top: 70px;
 }
 
 /* PROJECTS */
