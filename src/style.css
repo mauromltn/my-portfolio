@@ -59,7 +59,7 @@ nav a:focus {
 /* MAIN */
 main {
   max-width: 1300px;
-  padding: 0 25px;
+  padding: 0 25px 25px;
   
 }
 
@@ -121,9 +121,9 @@ main p {
 .skills p {
   margin: 0;
   padding: 10px 20px;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #a9a9a933;
   border-radius: 5px;
-  background-color: rgba(61, 61, 61, 0.5);
+  background-color: #72727233;
 }
 
 .skills-heading,
@@ -165,7 +165,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  padding: 30px 0;
+  padding-top: 30px;
   color: #f2f2f2;
   font-family: monospace;
   border-top: 1px solid #f2f2f2;
