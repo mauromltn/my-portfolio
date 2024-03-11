@@ -1,3 +1,8 @@
+/* SCROLL BEHAVIOR */
+html {
+  scroll-behavior: smooth;
+}
+
 /* BODY */
 body {
   display: flex;
@@ -10,7 +15,6 @@ body {
   padding: 0;
   color: #f2f2f2;
   background-color: #222222;
-  scroll-behavior: smooth;
 }
 
 /* LINKS */
