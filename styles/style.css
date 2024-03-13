@@ -37,8 +37,9 @@ header {
   border: 0.0625em solid #a9a9a933;
   border-radius: 3.125em;
   background-color: #72727233;
+  -webkit-backdrop-filter: blur(0.625em);
   backdrop-filter: blur(0.625em);
-}
+  }
 /* Ridimensionare il header */
 
 nav ul {
@@ -187,7 +188,7 @@ footer {
   header {
     width: fit-content;
     padding: 0 1.25em;
-    backdrop-filter: blur(0.625em);
+    
   }
   nav ul {
     gap: 2em;
@@ -211,9 +212,6 @@ footer {
 }
 
 @media (max-width: 30em) {
-  header {
-    backdrop-filter: blur(0.625em);
-  }
   .main-info {
     margin-bottom: 5em;
   }
