@@ -202,6 +202,9 @@ footer {
   .main-info span {
     font-size: 2.5em;
   }
+  .main-info p {
+    font-size: 1em;
+  }
   .skills {
     gap: 0.625em;
   }
@@ -217,6 +220,9 @@ footer {
   }
   .main-info span {
     font-size: 2em;
+  }
+  .main-info p {
+    font-size: 0.9em;
   }
   .skills {
     gap: 0.625em;
