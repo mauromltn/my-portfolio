@@ -187,6 +187,7 @@ footer {
   header {
     width: fit-content;
     padding: 0 1.25em;
+    backdrop-filter: blur(0.625em);
   }
   nav ul {
     gap: 2em;
@@ -207,4 +208,24 @@ footer {
     height: 12em;
     width: 22em;
   }
+}
+
+@media (max-width: 30em) {
+  header {
+    backdrop-filter: blur(0.625em);
+  }
+  .main-info {
+    margin-bottom: 5em;
+  }
+  .main-info span {
+    font-size: 2em;
+  }
+  .skills {
+    gap: 0.625em;
+  }
+  .projects-div {
+    height: 10em;
+    width: 20em;
+  }
+  
 }
