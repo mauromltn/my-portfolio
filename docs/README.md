@@ -4,4 +4,4 @@ Hi👋, I'm a software development student with zero prior experience, I created
 ## Lenguages used:
 > I already implemented HTML and CSS, I'm learning JS so I'll be using it soon.
 
-![Lenguages used](https://skillicons.dev/icons?i=html,css,js)
+![Lenguages used](https://skillicons.dev/icons?i=html,css)
