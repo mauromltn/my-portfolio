@@ -9,12 +9,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui;
   margin: 0;
   padding: 0;
   color: #f2f2f2;
-  background-color: #222222;
+  background: linear-gradient(to bottom, #222222, #0f0f0f);
 }
 
 /* LINKS */
@@ -39,8 +38,7 @@ header {
   background-color: #72727233;
   -webkit-backdrop-filter: blur(0.625em);
   backdrop-filter: blur(0.625em);
-  }
-/* Ridimensionare il header */
+}
 
 nav ul {
   display: flex;
@@ -65,7 +63,6 @@ nav a:focus {
 main {
   max-width: 81.25em;
   padding: 0 1.5625em 1.5625em;
-  
 }
 
 main p {
@@ -188,7 +185,6 @@ footer {
   header {
     width: fit-content;
     padding: 0 1.25em;
-    
   }
   nav ul {
     gap: 2em;
@@ -222,7 +218,7 @@ footer {
     font-size: 2em;
   }
   .main-info p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .skills {
     gap: 0.625em;
@@ -231,5 +227,4 @@ footer {
     height: 10em;
     width: 20em;
   }
-  
 }
