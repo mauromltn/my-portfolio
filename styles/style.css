@@ -181,7 +181,7 @@ footer {
 }
 
 /* MOBILE RESPONSIVE*/
-@media (max-width: 40em) {
+@media (max-width: 30em) {
   header {
     width: fit-content;
     padding: 0 1.25em;
@@ -193,7 +193,7 @@ footer {
     font-size: 1em;
   }
   .main-info {
-    margin-bottom: 5em;
+    margin-bottom: 8em;
   }
   .main-info span {
     font-size: 2.5em;
@@ -210,21 +210,43 @@ footer {
   }
 }
 
-@media (max-width: 30em) {
-  .main-info {
-    margin-bottom: 5em;
-  }
+@media (max-width: 25em) {
   .main-info span {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   .main-info p {
+    font-size: 0.9em;
+  }
+  main {
     font-size: 0.8em;
   }
   .skills {
     gap: 0.625em;
   }
   .projects-div {
-    height: 10em;
+    height: 11em;
     width: 20em;
+  }
+}
+
+@media (max-width: 24em) {
+  header {
+    width: fit-content;
+    padding: 0 1.3em;
+  }
+  nav ul {
+    gap: 1.7em;
+  }
+  nav a {
+    font-size: 0.95em;
+  }
+  .main-info span {
+    font-size: 2.1em;
+  }
+  .main-info p {
+    font-size: 0.8em;
+  }
+  main {
+    font-size: 0.8em;
   }
 }
