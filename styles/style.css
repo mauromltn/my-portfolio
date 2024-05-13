@@ -69,6 +69,11 @@ main p {
 }
 
 main a {
+  color: darkorchid;
+  font-weight: bold;
+}
+
+main a:hover {
   text-decoration: underline;
 }
 
