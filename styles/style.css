@@ -94,27 +94,6 @@ main a {
   color: #bbbbbb;
 }
 
-@media (max-width: 440px) {
-  .main-info span {
-    font-size: 3.5em;
-  }
-  .main-info p {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 380px) {
-  .main-info span {
-    font-size: 3em;
-  }
-  .main-info p {
-    font-size: 1em;
-  }
-  main {
-    font-size: 0.875em;
-  }
-}
-
 /*SKILLS */
 .skills {
   display: flex;
@@ -184,7 +163,29 @@ footer {
   padding: 0.3125em 0;
 }
 
-/* MOBILE RESPONSIVE*/
+/* COMPUTER RESPONSIVE */
+@media (max-width: 50.4em) {
+  .main-info span {
+    font-size: 3.5em;
+  }
+  .main-info p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 40.6em) {
+  .main-info span {
+    font-size: 3em;
+  }
+  .main-info p {
+    font-size: 1em;
+  }
+  main {
+    font-size: 0.875em;
+  }
+}
+
+/* MOBILE RESPONSIVE */
 @media (max-width: 30em) {
   header {
     width: fit-content;
@@ -200,7 +201,7 @@ footer {
     margin-bottom: 8em;
   }
   .main-info span {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
   .main-info p {
     font-size: 1em;
@@ -215,25 +216,6 @@ footer {
 }
 
 @media (max-width: 25em) {
-  .main-info span {
-    font-size: 2.2em;
-  }
-  .main-info p {
-    font-size: 0.9em;
-  }
-  main {
-    font-size: 0.8em;
-  }
-  .skills {
-    gap: 0.625em;
-  }
-  .projects-div {
-    height: 11em;
-    width: 20em;
-  }
-}
-
-@media (max-width: 24em) {
   header {
     width: fit-content;
     padding: 0 1.3em;
@@ -249,5 +231,15 @@ footer {
   }
   .main-info p {
     font-size: 0.8em;
+  }
+  main {
+    font-size: 0.8em;
+  }
+  .skills {
+    gap: 0.625em;
+  }
+  .projects-div {
+    height: 11em;
+    width: 20em;
   }
 }
