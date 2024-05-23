@@ -31,6 +31,7 @@ header {
   width: 31.25em;
   position: fixed;
   top: 1.25em;
+  z-index: 1;
   border: 0.0625em solid #a9a9a933;
   border-radius: 3.125em;
   background-color: #72727233;
@@ -56,25 +57,6 @@ nav a:focus {
   color: #f2f2f2;
 }
 
-/* MAIN */
-main {
-  max-width: 81.25em;
-  padding: 0 1.5625em 1.5625em;
-}
-
-main p {
-  color: #bbbbbb;
-}
-
-main a {
-  color: darkorchid;
-  font-weight: bold;
-}
-
-main a:hover {
-  text-decoration: underline;
-}
-
 /* MAIN INFO */
 .main-info {
   display: flex;
@@ -95,6 +77,25 @@ main a:hover {
   font-size: 1.5em;
   line-height: 1.8;
   color: #bbbbbb;
+}
+
+/* MAIN */
+main {
+  max-width: 81.25em;
+  padding: 0 1.5625em 1.5625em;
+}
+
+main p {
+  color: #bbbbbb;
+}
+
+main a {
+  color: darkorchid;
+  font-weight: bold;
+}
+
+main a:hover {
+  text-decoration: underline;
 }
 
 /*SKILLS */
