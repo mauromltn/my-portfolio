@@ -10,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: system-ui;
+  user-select: none;
   margin: 0;
   padding: 0;
   color: #f2f2f2;
@@ -60,24 +61,35 @@ nav a:focus {
 /* MAIN INFO */
 .main-info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: monospace;
-  text-align: center;
-  margin: 12em 0;
+  justify-content: space-between;
+
+  margin: 6em auto;
 }
 
-.main-info span {
+.text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-family: monospace;
+  text-align: left;
+}
+
+.text-div span {
   font-size: 5em;
   line-height: 1.4;
 }
 
-.main-info p {
+.text-div p {
   font-size: 1.5em;
   line-height: 1.8;
   color: #bbbbbb;
 }
+
+/* DA FARE
+.picture-div {
+  
+}*/
 
 /* MAIN */
 main {
@@ -86,6 +98,7 @@ main {
 }
 
 main p {
+  font-size: 15px;
   color: #bbbbbb;
 }
 
