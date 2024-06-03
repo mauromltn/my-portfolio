@@ -50,7 +50,7 @@ nav ul {
 nav a {
   font-size: 1.06em;
   font-weight: 600;
-  transition: 0.3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 nav a:hover,
@@ -63,7 +63,7 @@ nav a:focus {
   display: flex;
   justify-content: space-between;
   gap: 100px;
-  margin: 6em auto;
+  margin: 6em 0;
 }
 
 .text-div {
@@ -72,7 +72,6 @@ nav a:focus {
   justify-content: center;
   align-items: left;
   font-family: monospace;
-  text-align: left;
 }
 
 .text-div span {
@@ -81,7 +80,7 @@ nav a:focus {
 }
 
 .text-div p {
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 1.8;
   color: #bbbbbb;
 }
@@ -122,9 +121,9 @@ main a:hover {
 
 .skills p {
   margin: 0;
-  padding: 0.625em 1.25em;
-  border: 0.0625em solid #a9a9a933;
-  border-radius: 0.3125em;
+  padding: .625em 1.25em;
+  border: .0625em solid #a9a9a933;
+  border-radius: .3125em;
   background-color: #72727233;
 }
 
@@ -149,10 +148,10 @@ main a:hover {
   padding: 1.25em;
   height: 12.5em;
   width: 25em;
-  border: 0.0625em solid rgba(132, 132, 132, 0.5);
+  border: .0625em solid rgba(132, 132, 132, 0.5);
   border-radius: 1.5625em;
   background-color: rgba(61, 61, 61, 0.5);
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .projects-div:hover {
@@ -170,35 +169,72 @@ footer {
   padding-top: 1.875em;
   color: #f2f2f2;
   font-family: monospace;
-  border-top: 0.0625em solid #f2f2f2;
+  border-top: .0625em solid #f2f2f2;
 }
 
 .footer-links img {
   width: 2.5em;
   height: 2.5em;
-  margin: 0 0.625em;
-  padding: 0.3125em 0;
+  margin: 0 .625em;
+  padding: .3125em 0;
 }
 
 /* COMPUTER RESPONSIVE */
-@media (max-width: 50.4em) {
+@media (max-width: 85.6em) {
   .text-div span {
-    font-size: 3.5em;
+    font-size: 4em;
   }
   .text-div p {
     font-size: 1.2em;
   }
+  .picture-div img {
+    width: 370px;
+    height: 370px;
+  }
 }
 
-@media (max-width: 40.6em) {
+@media (max-width: 72.5em) {
+  .text-div span {
+    font-size: 3.5em;
+  }
+  .text-div p {
+    font-size: 1.1em;
+  }
+  .picture-div img {
+    width: 330px;
+    height: 330px;
+  }
+  main {
+    font-size: .875em;
+  }
+}
+
+@media (max-width: 63.2em) {
+  .main-info {
+    text-align: center;
+    margin-top: 8em;
+  }
+  .text-div span {
+    font-size: 4em;
+  }
+  .text-div p {
+    font-size: 1.2em;
+  }
+  .picture-div {
+    display: none;
+  }
+}
+
+@media (max-width: 37.5em) {
+  header {
+    width: fit-content;
+    padding: 0 2em;
+  }
   .text-div span {
     font-size: 3em;
   }
   .text-div p {
-    font-size: 1em;
-  }
-  main {
-    font-size: 0.875em;
+    font-size: 1.1em;
   }
 }
 
@@ -215,22 +251,22 @@ footer {
     font-size: 1em;
   }
   .main-info {
-    flex-direction: column;
+    margin-top: 8em;
   }
   .text-div {
     text-align: center;
   }
   .text-div span {
-    font-size: 2.3em;
+    font-size: 2.5em;
   }
   .text-div p {
-    font-size: 0.9em;
+    font-size: .8em;
   }
-  .picture-div img {
+  .picture-div {
     display: none;
   }
   .skills {
-    gap: 0.625em;
+    gap: .625em;
   }
   .projects-div {
     height: 12em;
@@ -247,19 +283,16 @@ footer {
     gap: 1.7em;
   }
   nav a {
-    font-size: 0.95em;
+    font-size: .95em;
   }
   .text-div span {
-    font-size: 2.1em;
+    font-size: 2.3em;
   }
-  .text-div p {
-    font-size: 0.8em;
-  }
-  main {
-    font-size: 0.8em;
+  main p {
+    font-size: .95em;
   }
   .skills {
-    gap: 0.625em;
+    gap: .625em;
   }
   .projects-div {
     height: 11em;
