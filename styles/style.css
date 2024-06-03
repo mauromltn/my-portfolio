@@ -62,7 +62,7 @@ nav a:focus {
 .main-info {
   display: flex;
   justify-content: space-between;
-
+  gap: 100px;
   margin: 6em auto;
 }
 
@@ -86,10 +86,10 @@ nav a:focus {
   color: #bbbbbb;
 }
 
-/* DA FARE
-.picture-div {
-  
-}*/
+.picture-div img {
+  width: 410px;
+  height: 410px;
+}
 
 /* MAIN */
 main {
@@ -98,6 +98,7 @@ main {
 }
 
 main p {
+  font-size: 15px;
   color: #bbbbbb;
 }
 
@@ -181,19 +182,19 @@ footer {
 
 /* COMPUTER RESPONSIVE */
 @media (max-width: 50.4em) {
-  .main-info span {
+  .text-div span {
     font-size: 3.5em;
   }
-  .main-info p {
+  .text-div p {
     font-size: 1.2em;
   }
 }
 
 @media (max-width: 40.6em) {
-  .main-info span {
+  .text-div span {
     font-size: 3em;
   }
-  .main-info p {
+  .text-div p {
     font-size: 1em;
   }
   main {
@@ -214,13 +215,19 @@ footer {
     font-size: 1em;
   }
   .main-info {
-    margin-bottom: 8em;
+    flex-direction: column;
   }
-  .main-info span {
+  .text-div {
+    text-align: center;
+  }
+  .text-div span {
     font-size: 2.3em;
   }
-  .main-info p {
+  .text-div p {
     font-size: 0.9em;
+  }
+  .picture-div img {
+    display: none;
   }
   .skills {
     gap: 0.625em;
@@ -242,10 +249,10 @@ footer {
   nav a {
     font-size: 0.95em;
   }
-  .main-info span {
+  .text-div span {
     font-size: 2.1em;
   }
-  .main-info p {
+  .text-div p {
     font-size: 0.8em;
   }
   main {
