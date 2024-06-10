@@ -63,7 +63,7 @@ nav a:focus {
   display: flex;
   justify-content: space-between;
   gap: 100px;
-  margin: 6em 0;
+  margin: 96px 0;
 }
 
 .text-div {
@@ -75,19 +75,19 @@ nav a:focus {
 }
 
 .text-div span {
-  font-size: 5em;
+  font-size: 64px;
   line-height: 1.4;
 }
 
 .text-div p {
-  font-size: 1.4em;
+  font-size: 18px;
   line-height: 1.8;
   color: #bbbbbb;
 }
 
 .picture-div img {
-  height: 410px;
-  width: 410px;
+  height: 400px;
+  width: 400px;
 }
 
 /* MAIN */
@@ -127,7 +127,7 @@ main a:hover {
 
 .skills-heading,
 .projects-heading {
-  margin-top: 70px;
+  margin-top: 120px;
 }
 
 /* PROJECTS */
