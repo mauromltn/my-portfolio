@@ -113,16 +113,19 @@ main a:hover {
 
 /*SKILLS */
 .skills {
-  text-align: center;
-  gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
-.skills span {
+.skills p {
   margin: 0;
   padding: 10px 20px;
   background-color: rgba(225, 225, 225, 0.06);
   border: 1px solid rgba(225, 225, 225, 0.1);
   border-radius: 5px;
+  color: #fff;
 }
 
 .skills-heading,
