@@ -264,7 +264,7 @@ footer {
     font-size: 35px;
   }
   .text-div p {
-    font-size: 10.5px;
+    font-size: 10px;
   }
   .picture-div {
     display: none;
@@ -293,6 +293,6 @@ footer {
     font-size: 30px;
   }
   main p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
