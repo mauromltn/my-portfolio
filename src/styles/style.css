@@ -295,4 +295,7 @@ footer {
   main p {
     font-size: 14px;
   }
+  main .about {
+    font-size: 12px;
+  }
 }
