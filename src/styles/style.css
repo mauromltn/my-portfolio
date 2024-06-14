@@ -1,6 +1,7 @@
-/* SCROLL BEHAVIOR */
-html {
+/* GLOBAL */
+* {
   scroll-behavior: smooth;
+  scrollbar-color: #222222 #131313;
 }
 
 /* BODY */
