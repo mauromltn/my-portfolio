@@ -107,10 +107,12 @@ main p {
 main a {
   color: darkorchid;
   font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 main a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*SKILLS */
