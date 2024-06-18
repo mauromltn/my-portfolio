@@ -115,28 +115,6 @@ main a:hover {
   text-decoration: none;
 }
 
-/*SKILLS */
-.skills {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.skills p {
-  margin: 0;
-  padding: 10px 20px;
-  background-color: rgba(225, 225, 225, 0.02);
-  border: 1px solid rgba(225, 225, 225, 0.1);
-  border-radius: 5px;
-  color: #f2f2f2;
-}
-
-.skills-heading,
-.projects-heading {
-  margin-top: 120px;
-}
-
 /* PROJECTS */
 .projects {
   display: flex;
@@ -165,12 +143,6 @@ main a:hover {
   border-color: rgba(225, 225, 225, 0.2);
 }
 
-.project span {
-  font-size: 21px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
 .project .arrow-up {
   color: rgba(225, 225, 225, 0.6);
   height: 25px;
@@ -181,6 +153,28 @@ main a:hover {
 .project .arrow-up:hover {
   transition: .3s ease-in-out;
   color: #f2f2f2;
+}
+
+/*SKILLS */
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills p {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgba(225, 225, 225, 0.02);
+  border: 1px solid rgba(225, 225, 225, 0.1);
+  border-radius: 5px;
+  color: #f2f2f2;
+}
+
+.skills-heading,
+.projects-heading {
+  margin-top: 120px;
 }
 
 /* FOOTER */
@@ -295,6 +289,10 @@ footer {
     p {
       font-size: 14px;
     }
+  }
+  .project h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
   }
 }
 
