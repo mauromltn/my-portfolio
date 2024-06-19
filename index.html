@@ -23,7 +23,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="#footer">Connect</a></li>
         </ul>
       </nav>
     </header>
@@ -108,6 +108,24 @@
         <p>Figma</p>
       </div>
 
+      <h1 class="connect-heading">Connect:</h1>
+      <section>
+        <h2>Reach Out</h2>
+        <p>
+          Have a question or comment? Feel free to reach out through the form below.
+        </p>
+        <form action="https://formspree.io/f/xgvwwwww" method="post">
+          <input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="off" required>
+          <input type="text" name="lastname" id="lastname" placeholder="Last Name" autocomplete="off" required>
+          <br>
+          <input type="email" id="email" name="email" placeholder="user@example.com" required>
+          <br>
+          <textarea name="message" id="message" placeholder="Message" required></textarea>
+          <br>
+          <button id="submit">Submit</button>
+        </form>
+      </section>
+
       <footer id="footer">
         <div class="footer-links">
           <a href="https://www.github.com/mauromltn" target="_blank"><img src="icons/github.webp" alt="GitHub"></a>
@@ -117,5 +135,6 @@
         <h3>&copy 2024 - Mauro Montane</h3>
       </footer>
     </main>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

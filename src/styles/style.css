@@ -1,7 +1,8 @@
 /* GLOBAL */
 * {
+  font-family: system-ui;
   scroll-behavior: smooth;
-  scrollbar-color: #222222 #131313;
+  scrollbar-width: none;
 }
 
 /* BODY */
@@ -10,12 +11,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: system-ui;
   user-select: none;
   margin: 0;
-  padding: 0;
-  background-color: #131313;
   color: #f2f2f2;
+  background-color: #131313;
 }
 
 /* LINKS */
@@ -72,15 +71,16 @@ nav a:focus {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  font-family: monospace;
 }
 
 .text-div span {
+  font-family: monospace;
   font-size: 64px;
   line-height: 1.2;
 }
 
 .text-div p {
+  font-family: monospace;
   font-size: 18px;
   line-height: 1.6;
   color: #bbbbbb;
@@ -115,6 +115,19 @@ main a:hover {
   text-decoration: none;
 }
 
+/* MARGINS */
+.skills-heading,
+.projects-heading,
+.connect-heading {
+  margin-top: 120px;
+}
+
+/* COLORS */
+.project, .skills p, section {
+  background-color: rgba(225, 225, 225, 0.02);
+  border: 1px solid rgba(225, 225, 225, 0.1);
+}
+
 /* PROJECTS */
 .projects {
   display: flex;
@@ -128,13 +141,11 @@ main a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(225, 225, 225, 0.02);
-  border: 1px solid rgba(225, 225, 225, 0.1);
-  border-radius: 10px;
-  cursor: pointer;
   height: 240px;
   width: 300px;
   padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
   transition: .3s ease-in-out;
 }
 
@@ -166,15 +177,78 @@ main a:hover {
 .skills p {
   margin: 0;
   padding: 10px 20px;
-  background-color: rgba(225, 225, 225, 0.02);
-  border: 1px solid rgba(225, 225, 225, 0.1);
   border-radius: 5px;
   color: #f2f2f2;
 }
 
-.skills-heading,
-.projects-heading {
-  margin-top: 120px;
+/* FORM */
+section * {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0 auto;
+  width: 650px;
+  padding: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+section p {
+  margin: 5px 0 20px;
+}
+
+form input {
+  height: 35px;
+}
+
+form input, form textarea {
+  width: 400px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  color: #f2f2f2;
+  background-color: rgba(225, 225, 225, 0.02);
+  border: 1px solid rgba(225, 225, 225, 0.1);
+  border-radius: 7px;
+}
+
+form #firstname, form #lastname {
+  width: 190px;
+}
+
+form #firstname {
+  margin-right: 5px;
+}
+
+form textarea {
+  height: 90px;
+  padding-top: 10px;
+  resize: none;
+}
+
+form input::selection, form textarea::selection {
+  background-color: #f2f2f2;
+  color: #131313;
+}
+
+form #submit {
+  width: 410px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #222;
+  background-color: #d4d4d4;
+  border: none;
+  border-radius: 7px;
+}
+
+form #submit:hover {
+  background-color: #fff;
+}
+
+form #submit:active {
+  transition: none;
 }
 
 /* FOOTER */
@@ -185,8 +259,6 @@ footer {
   align-items: center;
   margin-top: 50px;
   padding-top: 1.875em;
-  color: #f2f2f2;
-  font-family: monospace;
   border-top: .0625em solid #f2f2f2;
 }
 
@@ -197,26 +269,17 @@ footer {
   padding: .3125em 0;
 }
 
+footer h3 {
+  font-family: monospace;
+}
+
 /* COMPUTER RESPONSIVE */
-@media (max-width: 85.6em) {
+@media (max-width: 1260px) {
   .text-div span {
     font-size: 4em;
   }
   .text-div p {
     font-size: 1.2em;
-  }
-  .picture-div img {
-    width: 370px;
-    height: 370px;
-  }
-}
-
-@media (max-width: 72.5em) {
-  .text-div span {
-    font-size: 3.5em;
-  }
-  .text-div p {
-    font-size: 1.1em;
   }
   .picture-div img {
     width: 330px;
@@ -227,7 +290,20 @@ footer {
   }
 }
 
-@media (max-width: 63.2em) {
+@media (max-width: 1020px) {
+  .text-div span {
+    font-size: 3.3em;
+  }
+  .text-div p {
+    font-size: 1.1em;
+  }
+  .picture-div img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 850px) {
   .main-info {
     text-align: center;
     margin-top: 8em;
@@ -241,9 +317,13 @@ footer {
   .picture-div {
     display: none;
   }
-}
+  section {
+    width: 420px;
+    padding: 20px;
+  }
+} 
 
-@media (max-width: 37.5em) {
+@media (max-width: 600px) {
   header {
     width: fit-content;
     padding: 0 2em;
@@ -298,6 +378,21 @@ footer {
   }
   .project p {
     margin-bottom: 0;
+  }
+  section {
+    width: 270px;
+  }
+  form input, form textarea {
+    width: 250px;
+  }
+  form #firstname, form #lastname {
+    width: 117px;
+  }
+  form #firstname {
+    margin-right: 0;
+  }
+  form #submit {
+    width: 260px;
   }
 }
 
