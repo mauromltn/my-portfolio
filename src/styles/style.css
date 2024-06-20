@@ -105,7 +105,7 @@ main p {
 }
 
 main a {
-  color: darkorchid;
+  color: #bc35ff;
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 2px;
