@@ -238,17 +238,16 @@ form #submit {
   font-size: 15px;
   font-weight: bold;
   color: #222;
-  background-color: #d4d4d4;
-  border: none;
+  background-color: #fff;
+  border: 2px solid #fff;
   border-radius: 7px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
 }
 
 form #submit:hover {
-  background-color: #fff;
-}
-
-form #submit:active {
-  transition: none;
+  color: #f2f2f2;
+  background-color: transparent;
 }
 
 /* FOOTER */
@@ -412,5 +411,8 @@ footer h3 {
   }
   main .about {
     font-size: 13px;
+  }
+  .project {
+    width: 280px;
   }
 }
