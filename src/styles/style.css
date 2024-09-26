@@ -3,6 +3,7 @@
   font-family: system-ui;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  cursor: none;
 }
 
 /* BODY */
@@ -145,7 +146,6 @@ main a:hover {
   width: 300px;
   padding: 20px;
   border-radius: 10px;
-  cursor: pointer;
   transition: .3s ease-in-out;
 }
 
@@ -241,7 +241,6 @@ form #submit {
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 7px;
-  cursor: pointer;
   transition: .3s ease-in-out;
 }
 
@@ -270,6 +269,20 @@ footer {
 
 footer h3 {
   font-family: monospace;
+}
+
+/* CURSOR */
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  mix-blend-mode: difference;
+  transition: .1s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10;
 }
 
 /* COMPUTER RESPONSIVE */
