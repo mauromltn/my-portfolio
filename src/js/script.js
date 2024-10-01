@@ -1,6 +1,6 @@
 const cursor = document.querySelector('.cursor');
 // Getting all the elments where the cursor should be bigger
-const bigCursorElments = document.querySelectorAll(".big-cursor, p, a, h1, h2, h3, button")
+const bigCursorElments = document.querySelectorAll(".big-cursor, a, button")
 
 
 document.addEventListener('mousemove', e => {
@@ -10,8 +10,8 @@ document.addEventListener('mousemove', e => {
 
 bigCursorElments.forEach((element) => {
   element.addEventListener("mouseover", e => {
-    cursor.style.height = "100px"
-    cursor.style.width = "100px" 
+    cursor.style.height = "50px"
+    cursor.style.width = "50px" 
   })
 
   element.addEventListener("mouseleave", e => {
