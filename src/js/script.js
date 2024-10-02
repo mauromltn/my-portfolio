@@ -10,8 +10,8 @@ document.addEventListener('mousemove', e => {
 
 bigCursorElments.forEach((element) => {
   element.addEventListener("mouseover", e => {
-    cursor.style.height = "50px"
-    cursor.style.width = "50px" 
+    cursor.style.height = "40px"
+    cursor.style.width = "40px" 
   })
 
   element.addEventListener("mouseleave", e => {
