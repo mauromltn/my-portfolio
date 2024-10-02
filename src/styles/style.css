@@ -403,6 +403,9 @@ footer h3 {
   form #submit {
     width: 260px;
   }
+  .cursor {
+    display: none;
+  }
 }
 
 @media (max-width: 26.25em) {
