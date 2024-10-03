@@ -56,6 +56,7 @@ nav a {
 
 /* MAIN INFO */
 .main-info {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +86,17 @@ nav a {
 .picture-div img {
   height: 400px;
   width: 400px;
+  margin-top: -100px;
   opacity: 0.9;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
 }
 
 /* MAIN */
@@ -316,7 +327,6 @@ footer h3 {
 @media (max-width: 850px) {
   .main-info {
     text-align: center;
-    margin-top: 8em;
   }
   .text-div span {
     font-size: 4em;
@@ -357,9 +367,6 @@ footer h3 {
   }
   nav a {
     font-size: 16px;
-  }
-  .main-info {
-    margin-top: 128px;
   }
   .text-div {
     text-align: center;
