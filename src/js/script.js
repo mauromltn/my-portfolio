@@ -15,7 +15,7 @@ bigCursorElments.forEach((element) => {
   })
 
   element.addEventListener("mouseleave", e => {
-    cursor.style.height = "20px"
-    cursor.style.width = "20px" 
+    cursor.style.height = "15px"
+    cursor.style.width = "15px"
   })
 })

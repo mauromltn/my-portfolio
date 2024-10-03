@@ -1,6 +1,6 @@
 /* GLOBAL */
 * {
-  font-family: system-ui;
+  font-family: "Syne", sans-serif;
   scroll-behavior: smooth;
   scrollbar-width: none;
   cursor: none;
@@ -21,7 +21,7 @@ body {
 /* LINKS */
 a {
   text-decoration: none;
-  color: #bbbbbb;
+  color: #f2f2f2;
 }
 
 /* HEADER */
@@ -54,17 +54,13 @@ nav a {
   transition: .3s ease-in-out;
 }
 
-nav a:hover,
-nav a:focus {
-  color: #f2f2f2;
-}
-
 /* MAIN INFO */
 .main-info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 100px;
-  margin: 96px 0;
+  height: 100vh;
 }
 
 .text-div {
@@ -75,13 +71,12 @@ nav a:focus {
 }
 
 .text-div span {
-  font-family: monospace;
+  font-family: "Anton", system-ui;
   font-size: 64px;
   line-height: 1.2;
 }
 
 .text-div p {
-  font-family: monospace;
   font-size: 18px;
   line-height: 1.6;
   color: #bbbbbb;
@@ -270,7 +265,8 @@ footer {
 }
 
 footer h3 {
-  font-family: monospace;
+  font-family: "Anton", system-ui;
+  font-weight: 100;
 }
 
 /* CURSOR */
