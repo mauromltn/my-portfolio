@@ -343,10 +343,6 @@ footer h3 {
 } 
 
 @media (max-width: 600px) {
-  header {
-    width: fit-content;
-    padding: 0 2em;
-  }
   .text-div span {
     font-size: 3em;
   }
@@ -357,10 +353,6 @@ footer h3 {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 30em) {
-  header {
-    width: fit-content;
-    padding: 0 20px;
-  }
   nav ul {
     gap: 35px;
   }
@@ -413,10 +405,6 @@ footer h3 {
 }
 
 @media (max-width: 26.25em) {
-  header {
-    width: fit-content;
-    padding: 0 20px;
-  }
   nav ul {
     gap: 30px;
   }
