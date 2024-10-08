@@ -256,6 +256,16 @@ form #submit:hover {
   background-color: transparent;
 }
 
+/* FORM VALIDATION */
+input:invalid, textarea:invalid{
+  border-color: #ff0033;
+}
+
+input:invalid ~ button[type="submit"], textarea:invalid ~ button[type="submit"] {
+  opacity: .2;
+  pointer-events: none;
+}
+
 /* FOOTER */
 footer {
   display: flex;
