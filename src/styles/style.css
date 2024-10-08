@@ -257,7 +257,11 @@ form #submit:hover {
 }
 
 /* FORM VALIDATION */
-input:invalid, textarea:invalid{
+form input:focus, form textarea:focus {
+  outline: none;
+}
+
+input:invalid:focus, textarea:invalid:focus {
   border-color: #ff0033;
 }
 

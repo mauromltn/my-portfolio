@@ -139,12 +139,12 @@
           Have a question or comment? Feel free to reach out through the form below.
         </p>
         <form action="https://formspree.io/f/xgvwwwww" method="post">
-          <input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="off" required>
+          <input type="text" id="firstname" name="firstname" placeholder="First Name" autocomplete="off" minlength="0" required>
           <input type="text" name="lastname" id="lastname" placeholder="Last Name" autocomplete="off" required>
           <br>
           <input type="email" id="email" name="email" placeholder="user@example.com" required>
           <br>
-          <textarea name="message" id="message" placeholder="Message" required></textarea>
+          <textarea name="message" id="message" placeholder="Message (min 10 characters)" minlength="10" required></textarea>
           <br>
           <button type="submit" id="submit">Submit</button>
         </form>
