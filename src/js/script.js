@@ -1,21 +1,34 @@
 const cursor = document.querySelector('.cursor');
-// Getting all the elments where the cursor should be bigger
-const bigCursorElments = document.querySelectorAll(".big-cursor, a, button")
+const bigCursorElments = document.querySelectorAll(".big-cursor, a, button");
 
+let mouseX = 0, mouseY = 0;
+let isMouseMoving = false;
 
 document.addEventListener('mousemove', e => {
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  isMouseMoving = true;
 });
 
-bigCursorElments.forEach((element) => {
-  element.addEventListener("mouseover", e => {
-    cursor.style.height = "40px"
-    cursor.style.width = "40px" 
-  })
+function updateCursor() {
+  if (isMouseMoving) {
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+    isMouseMoving = false;
+  }
+  requestAnimationFrame(updateCursor);
+}
 
-  element.addEventListener("mouseleave", e => {
-    cursor.style.height = "15px"
-    cursor.style.width = "15px"
-  })
-})
+requestAnimationFrame(updateCursor);
+
+bigCursorElments.forEach((element) => {
+  element.addEventListener("mouseover", () => {
+    cursor.style.height = "40px";
+    cursor.style.width = "40px";
+  });
+
+  element.addEventListener("mouseleave", () => {
+    cursor.style.height = "15px";
+    cursor.style.width = "15px";
+  });
+});
