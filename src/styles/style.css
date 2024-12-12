@@ -168,11 +168,6 @@ main a:hover {
   margin-left: auto;
 }
 
-.project .arrow-up:hover {
-  transition: .3s ease-in-out;
-  color: #f2f2f2;
-}
-
 /*SKILLS */
 .skills {
   display: flex;
@@ -305,6 +300,75 @@ footer h3 {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 10;
+}
+
+/* LIGHT THEME */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 2;
+}
+
+body.light-theme {
+  color: #131313;
+  background-color: #f2f2f2;
+}
+
+.dark-theme {
+  color: #f2f2f2;
+  background-color: #131313;
+}
+
+body.light-theme a,
+body.light-theme .arrow-up {
+  color: #131313;
+}
+
+body.light-theme .text-div p {
+  color: #333333;
+}
+
+body.light-theme main p {
+  color: #333333;
+}
+
+body.light-theme .project, 
+body.light-theme .skills p, 
+body.light-theme section {
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .project:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.light-theme form input, 
+body.light-theme form textarea {
+  color: #131313;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme form #submit {
+  color: #f2f2f2;
+  background-color: #131313;
+  border: 2px solid #131313;
+}
+
+body.light-theme form #submit:hover {
+  color: #131313;
+  background-color: transparent;
+}
+
+body.light-theme footer {
+  border-color: #131313;
 }
 
 /* COMPUTER RESPONSIVE */

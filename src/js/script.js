@@ -32,3 +32,14 @@ bigCursorElments.forEach((element) => {
     cursor.style.width = "15px";
   });
 });
+
+const themeToggle = document.createElement('button');
+themeToggle.classList.add('theme-toggle');
+themeToggle.textContent = 'Light Theme';
+document.body.appendChild(themeToggle);
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-theme');
+  themeToggle.classList.toggle('dark-theme');
+  themeToggle.textContent = document.body.classList.contains('light-theme') ? 'Dark Theme' : 'Light Theme';
+});
