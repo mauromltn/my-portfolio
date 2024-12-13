@@ -371,6 +371,10 @@ body.light-theme footer {
   border-color: #131313;
 }
 
+body.light-theme .footer-links img {
+  filter: invert(100%);
+}
+
 /* COMPUTER RESPONSIVE */
 @media (max-width: 1260px) {
   .text-div span {
