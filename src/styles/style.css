@@ -31,6 +31,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   width: 100%;
   height: 60px;
   font-size: 16px;
@@ -304,13 +305,11 @@ footer h3 {
 
 /* LIGHT THEME */
 .theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 10px;
-  padding: 10px;
+  padding: 7px 12px;
+  font-size: 14px;
   z-index: 2;
 }
 
@@ -435,8 +434,11 @@ body.light-theme .footer-links img {
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 30em) {
+  .theme-toggle {
+    padding: 5px 10px;
+  }
   nav ul {
-    gap: 35px;
+    gap: 20px;
   }
   nav a {
     font-size: 16px;
@@ -487,9 +489,6 @@ body.light-theme .footer-links img {
 }
 
 @media (max-width: 26.25em) {
-  nav ul {
-    gap: 30px;
-  }
   nav a {
     font-size: 15px;
   }
