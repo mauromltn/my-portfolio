@@ -305,6 +305,7 @@ footer h3 {
 
 /* LIGHT THEME */
 .theme-toggle {
+  color: #131313;
   background-color: #f2f2f2;
   border: none;
   border-radius: 10px;
@@ -324,16 +325,10 @@ body.light-theme {
 }
 
 body.light-theme a,
-body.light-theme .arrow-up {
-  color: #131313;
-}
-
-body.light-theme .text-div p {
-  color: #333333;
-}
-
+body.light-theme .arrow-up,
+body.light-theme .text-div p,
 body.light-theme main p {
-  color: #333333;
+  color: #131313;
 }
 
 body.light-theme .project, 
