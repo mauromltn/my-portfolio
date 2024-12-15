@@ -112,7 +112,7 @@ main p {
 }
 
 main a {
-  color: #bc35ff;
+  color: #90e0ef;
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -314,7 +314,7 @@ footer h3 {
   z-index: 2;
 }
 
-body.light-theme {
+.light-theme {
   color: #131313;
   background-color: #f2f2f2;
 }
@@ -324,48 +324,52 @@ body.light-theme {
   background-color: #131313;
 }
 
-body.light-theme a,
-body.light-theme .arrow-up,
-body.light-theme .text-div p,
-body.light-theme main p {
+.light-theme a,
+.light-theme .arrow-up,
+.light-theme .text-div p,
+.light-theme main p {
   color: #131313;
 }
 
-body.light-theme .project, 
-body.light-theme .skills p, 
-body.light-theme section {
+.light-theme main a {
+  color: #023e8a;
+}
+
+.light-theme .project, 
+.light-theme .skills p, 
+.light-theme section {
   background-color: rgba(0, 0, 0, 0.02);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-body.light-theme .project:hover {
+.light-theme .project:hover {
   background-color: rgba(0, 0, 0, 0.04);
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-body.light-theme form input, 
-body.light-theme form textarea {
+.light-theme form input, 
+.light-theme form textarea {
   color: #131313;
   background-color: rgba(0, 0, 0, 0.02);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-body.light-theme form #submit {
+.light-theme form #submit {
   color: #f2f2f2;
   background-color: #131313;
   border: 2px solid #131313;
 }
 
-body.light-theme form #submit:hover {
+.light-theme form #submit:hover {
   color: #131313;
   background-color: transparent;
 }
 
-body.light-theme footer {
+.light-theme footer {
   border-color: #131313;
 }
 
-body.light-theme .footer-links img {
+.light-theme .footer-links img {
   filter: invert(100%);
 }
 
