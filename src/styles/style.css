@@ -177,7 +177,7 @@ main a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 7px;
 }
 
 .skills p {
@@ -472,6 +472,13 @@ footer h3 {
   }
   .project p {
     margin-bottom: 0;
+  }
+  .skills {
+    gap: 5px;
+  }
+  .skills p {
+    font-size: 12px;
+    padding: 5px 10px;
   }
   section {
     width: 270px;
