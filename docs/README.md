@@ -1,5 +1,20 @@
-<h1 align=center>Portfolio Website</h1>
-Hi👋, I'm a student web developer with zero prior experience, I created this repository to document my learning journey and build a personal website. This repository serves as a transparent record of my progress, challenges, and lessons learned in web development. Designed for simplicity, it's a showcase of my evolving skills and a resource that might resonate with others starting from scratch. Explore and enjoy the ride! 🚀
+# Mauro Montané - Portfolio Website
+Welcome to the repository of my personal portfolio! This project showcases my growth as a web developer and reflects my dedication to creating a site that is both functional and visually attractive.
 
-## Languages used:
-![Languages used](https://skillicons.dev/icons?i=html,css,js)
+## 📝 Overview:
+- **Minimalist**: Focused on simplicity and clarity.  
+- **Responsive**: Adapted for both desktop and mobile devices.  
+- **Evolving**: Continuously updated as I grow my skills.  
+
+## 🛠 Goals  
+- Document my development journey.  
+- Showcase my skills and projects.  
+- Create a resource that inspires and connects with beginners.  
+
+## ✨ Next Steps  
+Current plans include:  
+- Adding new features and content.  
+- Optimizing performance and accessibility.  
+- Implementing new design to improve the user experience.  
+
+Feel free to explore the code and share any feedback. Your input is always welcome! 
