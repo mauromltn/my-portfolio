@@ -6,6 +6,21 @@
   cursor: none;
 }
 
+:root {
+  --color-primary: #f2f2f2;
+  --color-secondary: #131313;
+  --color-accent: #90e0ef;
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --color-error: #ff0033;
+  --color-background-light: rgba(225, 225, 225, 0.02);
+  --color-border-light: rgba(225, 225, 225, 0.1);
+  --color-background-dark: rgba(0, 0, 0, 0.02);
+  --color-border-dark: rgba(0, 0, 0, 0.1);
+  --color-hover-light: rgba(225, 225, 225, 0.04);
+  --color-hover-dark: rgba(0, 0, 0, 0.04);
+}
+
 /* BODY */
 body {
   display: flex;
@@ -14,14 +29,14 @@ body {
   align-items: center;
   user-select: none;
   margin: 0;
-  color: #f2f2f2;
-  background-color: #131313;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 /* LINKS */
 a {
   text-decoration: none;
-  color: #f2f2f2;
+  color: var(--color-primary);
 }
 
 /* HEADER */
@@ -118,7 +133,7 @@ main p {
 }
 
 main a {
-  color: #90e0ef;
+  color: var(--color-accent);
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -137,8 +152,8 @@ main a:hover {
 
 /* COLORS */
 .project, .skills p, section {
-  background-color: rgba(225, 225, 225, 0.02);
-  border: 1px solid rgba(225, 225, 225, 0.1);
+  background-color: var(--color-background-light);
+  border: 1px solid var(--color-border-light);
 }
 
 /* PROJECTS */
@@ -162,7 +177,7 @@ main a:hover {
 }
 
 .project:hover {
-  background-color: rgba(225, 225, 225, 0.04);
+  background-color: var(--color-hover-light);
   border-color: rgba(225, 225, 225, 0.2);
 }
 
@@ -187,7 +202,7 @@ main a:hover {
   margin: 0;
   padding: 10px 20px;
   border-radius: 5px;
-  color: #f2f2f2;
+  color: var(--color-primary);
 }
 
 /* FORM */
@@ -216,9 +231,9 @@ form input, form textarea {
   width: 400px;
   margin-bottom: 20px;
   padding-left: 10px;
-  color: #f2f2f2;
-  background-color: rgba(225, 225, 225, 0.02);
-  border: 1px solid rgba(225, 225, 225, 0.1);
+  color: var(--color-primary);
+  background-color: var(--color-background-light);
+  border: 1px solid var(--color-border-light);
   border-radius: 7px;
 }
 
@@ -237,8 +252,8 @@ form textarea {
 }
 
 form input::selection, form textarea::selection {
-  background-color: #f2f2f2;
-  color: #131313;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 form #submit {
@@ -246,15 +261,15 @@ form #submit {
   height: 40px;
   font-size: 15px;
   font-weight: bold;
-  color: #222;
-  background-color: #fff;
-  border: 2px solid #fff;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border: 2px solid var(--color-light);
   border-radius: 7px;
   transition: .3s ease-in-out;
 }
 
 form #submit:hover {
-  color: #f2f2f2;
+  color: var(--color-primary);
   background-color: transparent;
 }
 
@@ -264,7 +279,7 @@ form input:focus, form textarea:focus {
 }
 
 input:invalid:focus, textarea:invalid:focus {
-  border-color: #ff0033;
+  border-color: var(--color-error);
 }
 
 input:invalid ~ button[type="submit"], textarea:invalid ~ button[type="submit"] {
@@ -280,7 +295,7 @@ footer {
   align-items: center;
   margin-top: 50px;
   padding-top: 30px;
-  border-top: .0625em solid #f2f2f2;
+  border-top: .0625em solid var(--color-primary);
 }
 
 .footer-links img {
@@ -301,7 +316,7 @@ footer h3 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--color-light);
   mix-blend-mode: difference;
   transition: .1s;
   transform: translate(-50%, -50%);
@@ -311,8 +326,8 @@ footer h3 {
 
 /* LIGHT THEME */
 .theme-toggle {
-  color: #131313;
-  background-color: #f2f2f2;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
   border: none;
   border-radius: 100px;
   height: fit-content;
@@ -322,20 +337,20 @@ footer h3 {
 }
 
 .light-theme {
-  color: #131313;
-  background-color: #f2f2f2;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .dark-theme {
-  color: #f2f2f2;
-  background-color: #131313;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 .light-theme a,
 .light-theme .arrow-up,
 .light-theme .text-div p,
 .light-theme main p {
-  color: #131313;
+  color: var(--color-secondary);
 }
 
 .light-theme main a {
@@ -345,35 +360,35 @@ footer h3 {
 .light-theme .project, 
 .light-theme .skills p, 
 .light-theme section {
-  background-color: rgba(0, 0, 0, 0.02);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--color-background-dark);
+  border: 1px solid var(--color-border-dark);
 }
 
 .light-theme .project:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--color-hover-dark);
   border-color: rgba(0, 0, 0, 0.2);
 }
 
 .light-theme form input, 
 .light-theme form textarea {
-  color: #131313;
-  background-color: rgba(0, 0, 0, 0.02);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--color-secondary);
+  background-color: var(--color-background-dark);
+  border: 1px solid var(--color-border-dark);
 }
 
-.light-theme form #submit {
-  color: #f2f2f2;
-  background-color: #131313;
-  border: 2px solid #131313;
+light-theme form #submit {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
 }
 
 .light-theme form #submit:hover {
-  color: #131313;
+  color: var(--color-secondary);
   background-color: transparent;
 }
 
 .light-theme footer {
-  border-color: #131313;
+  border-color: var(--color-secondary);
 }
 
 .light-theme .footer-links img {
