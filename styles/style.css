@@ -13,11 +13,10 @@
   --color-light: #ffffff;
   --color-dark: #000000;
   --color-error: #ff0033;
-  --color-background-light: rgba(225, 225, 225, 0.02);
+  --color-background-light: rgba(225, 225, 225, 0.04);
   --color-border-light: rgba(225, 225, 225, 0.1);
   --color-background-dark: rgba(0, 0, 0, 0.02);
   --color-border-dark: rgba(0, 0, 0, 0.1);
-  --color-hover-light: rgba(225, 225, 225, 0.04);
   --color-hover-dark: rgba(0, 0, 0, 0.04);
 }
 
@@ -74,6 +73,10 @@ nav a {
   font-size: 17px;
   font-weight: 600;
   transition: .3s ease-in-out;
+}
+
+nav a.white {
+  color: white;
 }
 
 /* MAIN INFO */
@@ -160,7 +163,7 @@ h1 {
 /* COLORS */
 .project, .skills p, section {
   background-color: var(--color-background-light);
-  border: 1px solid var(--color-border-light);
+  outline: 1px solid var(--color-border-light);
 }
 
 /* PROJECTS */
@@ -184,8 +187,7 @@ h1 {
 }
 
 .project:hover {
-  background-color: var(--color-hover-light);
-  border-color: rgba(225, 225, 225, 0.2);
+  outline-width: 5px;
 }
 
 .project .arrow-up {
@@ -290,7 +292,7 @@ input:invalid:focus, textarea:invalid:focus {
 }
 
 input:invalid ~ button[type="submit"], textarea:invalid ~ button[type="submit"] {
-  opacity: .2;
+  opacity: .1;
   pointer-events: none;
 }
 
