@@ -33,14 +33,6 @@ bigCursorElments.forEach((element) => {
   });
 });
 
-const themeToggle = document.querySelector('.theme-toggle');
-
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light-theme');
-  themeToggle.classList.toggle('dark-theme');
-  themeToggle.textContent = document.body.classList.contains('light-theme') ? 'Dark' : 'Light';
-});
-
 document.addEventListener('scroll', function() {
   const mainInfoSection = document.querySelector('.main-info');
   const navLinks = document.querySelectorAll('nav a');
