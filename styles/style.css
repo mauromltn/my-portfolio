@@ -11,13 +11,9 @@
   --color-secondary: #000000;
   --color-accent: #90e0ef;
   --color-light: #ffffff;
-  --color-dark: #000000;
   --color-error: #ff0033;
-  --color-background-light: rgba(225, 225, 225, 0.04);
-  --color-border-light: rgba(225, 225, 225, 0.1);
-  --color-background-dark: rgba(0, 0, 0, 0.02);
-  --color-border-dark: rgba(0, 0, 0, 0.1);
-  --color-hover-dark: rgba(0, 0, 0, 0.04);
+  --color-background: rgba(225, 225, 225, 0.08);
+  --color-border: rgba(225, 225, 225, 0.2);
 }
 
 /* BODY */
@@ -89,7 +85,7 @@ nav a.white {
   height: 100vh;
   background-image: url("../icons/HeroGradient.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: center;
 }
 
 .text-div {
@@ -156,8 +152,8 @@ h1 {
 
 /* COLORS */
 .project, .skills p, section {
-  background-color: var(--color-background-light);
-  outline: 1px solid var(--color-border-light);
+  background-color: var(--color-background);
+  outline: 1px solid var(--color-border);
 }
 
 /* PROJECTS */
@@ -235,8 +231,8 @@ form input, form textarea {
   margin-bottom: 20px;
   padding-left: 10px;
   color: var(--color-primary);
-  background-color: var(--color-background-light);
-  border: 1px solid var(--color-border-light);
+  background-color: transparent;
+  border: 1px solid rgba(225, 225, 225, 0.1);
   border-radius: 7px;
 }
 
@@ -264,7 +260,7 @@ form #submit {
   height: 40px;
   font-size: 15px;
   font-weight: bold;
-  color: var(--color-dark);
+  color: var(--color-secondary);
   background-color: var(--color-light);
   border: 2px solid var(--color-light);
   border-radius: 7px;
@@ -330,35 +326,13 @@ footer h3 {
 /* COMPUTER RESPONSIVE */
 @media (max-width: 1260px) {
   .text-div span {
-    font-size: 4em;
+    font-size: 70px;
   }
   .text-div p {
-    font-size: 1.2em;
-  }
-  .main {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
-
-@media (max-width: 1020px) {
-  .text-div span {
-    font-size: 3.3em;
-  }
-  .text-div p {
-    font-size: 1.1em;
-  }
-}
-
 @media (max-width: 850px) {
-  .main-info {
-    text-align: center;
-  }
-  .text-div span {
-    font-size: 4em;
-  }
-  .text-div p {
-    font-size: 1.2em;
-  }
   section {
     width: 420px;
     padding: 20px;
