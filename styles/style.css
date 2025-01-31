@@ -176,10 +176,6 @@ h1 {
   transition: .3s ease-in-out;
 }
 
-.project:hover {
-  outline-width: 5px;
-}
-
 .project .arrow-up {
   color: rgba(225, 225, 225, 0.6);
   min-height: 25px;
@@ -187,6 +183,14 @@ h1 {
   max-height: 25px;
   max-width: 25px;
   margin-left: auto;
+  transition: .3s ease-in-out;
+}
+
+.project:hover {
+  outline-width: 5px;
+  svg {
+    transform: rotate(45deg);
+  }
 }
 
 /*SKILLS */
