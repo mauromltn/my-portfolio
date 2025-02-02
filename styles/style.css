@@ -43,7 +43,7 @@ header {
   align-items: center;
   width: 100%;
   font-size: 16px;
-  z-index: 1;
+  z-index: 3;
   margin-top: 18px;
 }
 
@@ -86,6 +86,7 @@ nav a.white {
   background-image: url("../img/HeroGradient.jpg");
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 .text-div {
@@ -124,6 +125,7 @@ nav a.white {
   justify-content: center;
   align-items: center;
   background-color: var(--color-secondary);
+  z-index: 1;
 }
 
 main {
@@ -310,7 +312,7 @@ footer {
   height: 320px;
   background-color: #141414;
   color: var(--color-secondary);
-  z-index: -1;
+  z-index: 0;
   overflow: hidden;
 }
 
