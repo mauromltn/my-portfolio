@@ -135,7 +135,7 @@ main {
 
 main p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #bbbbbb;
 }
 
@@ -168,36 +168,42 @@ h1 {
 
 /* PROJECTS */
 .projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 30px;
   margin-top: 50px;
 }
 
 .project {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 240px;
-  width: 300px;
-  padding: 20px;
-  border-radius: 10px;
+  height: 25px;
+  width: 210px;
+  padding: 15px;
+  border-radius: 1000px;
   transition: .3s ease-in-out;
 }
 
+.project h2 {
+  font-size: 18px;
+}
+
 .project .arrow-up {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
   color: rgba(225, 225, 225, 0.6);
-  min-height: 25px;
-  min-width: 25px;
-  max-height: 25px;
-  max-width: 25px;
-  margin-left: auto;
   transition: .3s ease-in-out;
 }
 
 .project:hover {
-  outline-width: 5px;
+  outline-width: 4px;
   svg {
     transform: rotate(45deg);
   }
@@ -395,18 +401,8 @@ footer {
   .text-div p {
     font-size: 10px;
   }
-  .project {
-    height: 160px;
-    width: 300px;
-  }
-  .project .arrow-up {
-    height: 20px;
-    width: 20px;
-  }
-  .project h2 {
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 5px;
+  .projects {
+    grid-template-columns: 1fr;
   }
   .project p {
     margin-bottom: 0;
@@ -465,9 +461,6 @@ footer {
   }
   main p {
     font-size: 14px;
-  }
-  .project {
-    width: 280px;
   }
   .name {
     font-size: 55px;
