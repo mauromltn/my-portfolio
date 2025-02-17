@@ -1,6 +1,6 @@
 /* GLOBAL */
 * {
-  font-family: "Syne", sans-serif;
+  font-family: "Inter", serif;
   scroll-behavior: smooth;
   scrollbar-width: none;
   cursor: none;
@@ -9,7 +9,7 @@
 :root {
   --color-primary: #f2f2f2;
   --color-secondary: #000000;
-  --color-accent: #90e0ef;
+  --color-tertiary: #aaaaaa;
   --color-light: #ffffff;
   --color-error: #ff0033;
   --color-background: rgba(225, 225, 225, 0.08);
@@ -42,7 +42,6 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 16px;
   z-index: 3;
   margin-top: 18px;
 }
@@ -61,13 +60,13 @@ ul {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 18px;
+  gap: 20px;
 }
 
 nav a {
   color: var(--color-secondary);
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
   transition: .3s ease-in-out;
 }
 
@@ -103,15 +102,15 @@ nav a.white {
 }
 
 .text-div p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  line-height: 1.6;
-  color: #bbbbbb;
+  line-height: 1.5;
+  color: var(--color-tertiary)
 }
 
 .arrow-down {
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   left: 50%;
   transform: translateX(-50%);
   width: 25px;
@@ -130,18 +129,18 @@ nav a.white {
 
 main {
   min-width: 0;
-  max-width: 1100px;
+  max-width: 800px;
   padding: 0 40px 50px;
 }
 
 main p {
   font-size: 16px;
   line-height: 1.5;
-  color: #bbbbbb;
+  color: var(--color-primary);
 }
 
 main a {
-  color: var(--color-accent);
+  color: var(--color-tertiary);
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -153,6 +152,7 @@ main a:hover {
 
 /* MARGINS */
 h1 {
+  font-size: 40px;
   margin: 100px 0 50px;
 }
 
@@ -168,7 +168,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   grid-template-rows: auto auto;
   justify-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .project {
@@ -182,16 +182,13 @@ h1 {
   transition: .3s ease-in-out;
 }
 
-.project h2 {
-  font-size: 18px;
-  font-weight: 400;
-}
+.project p { font-weight: 400; }
 
 .project .arrow-up {
   position: absolute;
   right: 15px;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   color: rgba(225, 225, 225, 0.6);
   transition: .3s ease-in-out;
 }
@@ -206,15 +203,15 @@ h1 {
 /*SKILLS */
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 12px;
 }
 
 .skills p {
+  font-size: 14px;
   margin: 0;
   padding: 10px 20px;
   border-radius: 10px;
-  color: var(--color-primary);
   text-align: center;
 }
 
@@ -233,6 +230,8 @@ section {
 }
 
 section p {
+  font-size: 14px;
+  color: var(--color-tertiary);
   margin: 5px 0 20px;
 }
 
