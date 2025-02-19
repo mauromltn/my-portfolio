@@ -15,6 +15,7 @@
   --color-error: #ff0033;
   --color-background: rgba(225, 225, 225, 0.08);
   --color-border: rgba(225, 225, 225, 0.2);
+  --color-footer: #101010;
 }
 
 /* BODY */
@@ -155,6 +156,10 @@ main a:hover {
 h1 {
   font-size: 35px;
   margin: 100px 0 50px;
+}
+
+h1:first-child {
+  margin-top: 0;
 }
 
 /* COLORS */
@@ -307,14 +312,19 @@ footer {
   width: 100%;
   height: 250px;
   color: var(--color-primary);
-  background-color: #141414;
+  background-color: var(--color-footer);
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px 100px;
+  padding: 20px 150px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .footer-links {
@@ -327,12 +337,9 @@ footer {
   gap: 8px;
 }
 
-.footer-links span {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
+.footer-links label { font-weight: 600; }
 
+.footer-links li a { color: var(--color-tertiary); }
 /* CURSOR */
 .cursor {
   position: fixed;
@@ -359,18 +366,32 @@ footer {
   }
 }
 @media (max-width: 700px) {
-  footer { height: 420px; }
-  .footer-content { flex-direction: column; }
+  footer { height: 350px; }
+  .footer-content { flex-direction: column-reverse }
   .footer-content {
-    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     padding: 20px 50px 0;
   }
-  .footer-links { gap: 50px; }
-  .footer-links span {
-    font-size: 17px;
-    margin-bottom: 20px;
+  .footer-text {
+    display: flex;
+    gap: 0px;
   }
-  .footer-links ul { gap: 15px;}
+
+  .footer-text p:first-child {
+    border-right: 1px solid var(--color-tertiary);
+    padding-right: 10px;
+  }
+
+  .footer-text p:last-child {
+    padding-left: 10px;
+  }
+
+  .footer-links {
+    gap: 80px;
+  }
+  .footer-links ul { gap: 15px; }
 
 }
 @media (max-width: 600px) {
@@ -385,6 +406,7 @@ footer {
   .text-div { text-align: center; }
   .text-div span { font-size: 35px; }
   .text-div p { font-size: 10px; }
+  main p { font-size: 14px; }
   .skills { grid-template-columns: 1fr 1fr 1fr; }
   .skills p {
     font-size: 12px;
@@ -394,11 +416,10 @@ footer {
   form input, form textarea { width: 250px; }
   form #firstname, form #lastname { width: 114.8px; }
   form #submit { width: 260px; }
+  .footer-links li a { font-weight: 500; }
   .cursor { display: none; }
 }
 @media (max-width: 26.25em) {
   nav a { font-size: 15px; }
   .text-div span { font-size: 30px; }
-  main p { font-size: 14px; }
-  .name { font-size: 55px; }
 }
